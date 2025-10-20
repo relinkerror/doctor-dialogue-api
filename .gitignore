@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Env & secrets (绝不入库)
+.env
+*.env
+config/llm_config.json
+utils/transcription/.env
+
+# OS & tools
+.DS_Store
+Thumbs.db
+
+# Elastic Beanstalk
+.elasticbeanstalk/*
+!.elasticbeanstalk/config.yml
+
+# Byte-compiled / caches
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

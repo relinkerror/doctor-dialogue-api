@@ -1,0 +1,51 @@
+{
+  "persona_id": "MDD",
+  "run": 6,
+  "step": 6,
+  "dialog_history": [
+    {
+      "role": "user",
+      "content": "你好，我最近睡眠不好，想咨询一下。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来你最近睡眠质量不太好。能具体说说最近两周的睡眠情况吗？比如每晚能睡几个小时，会不会经常醒来？"
+    },
+    {
+      "role": "user",
+      "content": "我几乎整晚都睡不着。躺在床上脑子里全是负面想法，翻来覆去到凌晨三四点才能勉强睡着。有时候刚睡着没多久就突然惊醒，然后就再也睡不着了。每天最多只能睡两三个小时。"
+    },
+    {
+      "role": "assistant",
+      "content": "除了失眠之外，最近两周你的情绪状态怎么样？比如会不会经常感到悲伤、空虚或者绝望？"
+    },
+    {
+      "role": "user",
+      "content": "我每天都觉得特别绝望，好像掉进了一个黑洞里。早上醒来第一件事就是想哭，上班路上也会突然流泪。以前喜欢的事情现在完全提不起兴趣，连跟朋友聊天都觉得是负担。最可怕的是，我总觉得自己是个彻底的失败者。"
+    },
+    {
+      "role": "assistant",
+      "content": "这种低落情绪持续多久了？是从最近才开始，还是已经持续了相当长的一段时间？"
+    },
+    {
+      "role": "user",
+      "content": "就是这两周突然变成这样的。之前我一直很正常，工作生活都很积极。但这两周就像变了个人，情绪完全失控。我自己也很困惑，明明生活一切如常，为什么会突然这样。"
+    },
+    {
+      "role": "assistant",
+      "content": "我注意到你说这种状态是突然出现的。那在这两周之前，你有没有过持续较长时间的情绪低落期？比如持续几个月甚至更久？"
+    },
+    {
+      "role": "user",
+      "content": "从来没有过。我之前性格一直很开朗，工作压力也能很好调节。朋友都说我是个乐观的人。就是这两周毫无征兆地崩溃了，连我自己都觉得很陌生。现在连最基本的日常工作都做不好，这让我更加自责。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来这种突然的情绪变化让你很困扰。能具体说说这两周你的睡眠和食欲有什么变化吗？比如会不会经常吃不下饭，或者反而吃得更多？"
+    }
+  ],
+  "current_question": "Five (or more) of the following symptoms have been present during the same 2-week period and represent a change from previous functioning; at least one of the symptoms is either (1) depressed mood or (2) loss of interest or pleasure. Note: Do not include symptoms that are clearly attributable to another medical condition. 1. Depressed mood most of the day, nearly every day, as indicated by either subjective report (e.g., feels sad, empty, hopeless) or observation made by others (e.g., appears tearful). (Note: In children and adolescents, can be irritable mood.) 2. Markedly diminished interest or pleasure in all, or almost all, activities most of the day, nearly every day (as indicated by either subjective account or observation). 3. Significant weight loss when not dieting or weight gain (e.g., a change of more than 5% of body weight in a month), or decrease or increase in appetite nearly every day. (Note: In children, consider failure to make expected weight gain.) 4. Insomnia or hypersomnia nearly every day. 5. Psychomotor agitation or retardation nearly every day (observable by others, not merely subjective feelings of restlessness or being slowed down). 6. Fatigue or loss of energy nearly every day. 7. Feelings of worthlessness or excessive or inappropriate guilt (which may be delusional) nearly every day (not merely self-reproach or guilt about being sick). 8. Diminished ability to think or concentrate, or indecisiveness, nearly every day (either by subjective account or as observed by others). 9. Recurrent thoughts of death (not just fear of dying), recurrent suicidal ideation without a specific plan, or a suicide attempt or a specific plan for committing suicide.",
+  "doctor_ask": "我理解这种状态让你很痛苦。除了睡眠和食欲问题，这两周你有没有觉得特别疲惫，或者注意力很难集中？比如工作时会不会经常走神？",
+  "patient_reply": "是的，特别明显。以前我能轻松处理的工作现在完全无法集中精力，经常盯着电脑屏幕发呆。最可怕的是连简单的邮件都写不出来，大脑像生锈了一样。这种工作能力的突然下降让我更加焦虑，觉得自己很没用。",
+  "progress": "已完成1/6问卷，共10/42题完成"
+}

@@ -1,0 +1,10 @@
+# 不要把这些塞进镜像上下文
+.venv/
+venv/
+__pycache__/
+*.pyc
+.git/
+.gitignore
+.env
+*.env
+# 如果你后续把模型放别处，记得忽略 models/ 以免镜像过大

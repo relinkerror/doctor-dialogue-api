@@ -1,0 +1,10 @@
+Do you often shout, talk, or scream loudly while dreaming?（Yes/No）
+Has your bed partner ever noticed you performing violent movements during sleep?（Yes/No）
+Do you frequently make kicking, punching, or flailing motions while asleep?（Yes/No）
+Have you injured yourself (e.g., cut, bruise) during sleep due to your movements?（Yes/No）
+Has your bed partner ever been hurt (e.g., elbowed, kicked) by you while you were asleep?（Yes/No）
+Do you engage in complex behaviors like grabbing, jumping out of bed, or opening doors during sleep?（Yes/No）
+Do you suddenly wake up and feel confused or disoriented for a short time?（Yes/No）
+Have you experienced waking up multiple times per night due to movements or noises?（Yes/No）
+Would you rate your overall sleep quality as very disturbed due to your nocturnal behaviors?（Yes/No）
+Have you ever been diagnosed with a neurological condition (e.g., Parkinson’s) in association with your sleep disturbances?（Yes/No）

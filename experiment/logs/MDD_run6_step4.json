@@ -1,0 +1,35 @@
+{
+  "persona_id": "MDD",
+  "run": 6,
+  "step": 4,
+  "dialog_history": [
+    {
+      "role": "user",
+      "content": "你好，我最近睡眠不好，想咨询一下。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来你最近睡眠质量不太好。能具体说说最近两周的睡眠情况吗？比如每晚能睡几个小时，会不会经常醒来？"
+    },
+    {
+      "role": "user",
+      "content": "我几乎整晚都睡不着。躺在床上脑子里全是负面想法，翻来覆去到凌晨三四点才能勉强睡着。有时候刚睡着没多久就突然惊醒，然后就再也睡不着了。每天最多只能睡两三个小时。"
+    },
+    {
+      "role": "assistant",
+      "content": "除了失眠之外，最近两周你的情绪状态怎么样？比如会不会经常感到悲伤、空虚或者绝望？"
+    },
+    {
+      "role": "user",
+      "content": "我每天都觉得特别绝望，好像掉进了一个黑洞里。早上醒来第一件事就是想哭，上班路上也会突然流泪。以前喜欢的事情现在完全提不起兴趣，连跟朋友聊天都觉得是负担。最可怕的是，我总觉得自己是个彻底的失败者。"
+    },
+    {
+      "role": "assistant",
+      "content": "这种低落情绪持续多久了？是从最近才开始，还是已经持续了相当长的一段时间？"
+    }
+  ],
+  "current_question": "Depressed mood for most of the day, for more days than not, as indicated by either subjective account or observation by others, for at least 2 years. Note: In children and adolescents, mood can be irritable and duration must be at least 1 year.",
+  "doctor_ask": "我注意到你说这种状态是突然出现的。那在这两周之前，你有没有过持续较长时间的情绪低落期？比如持续几个月甚至更久？",
+  "patient_reply": "从来没有过。我之前性格一直很开朗，工作压力也能很好调节。朋友都说我是个乐观的人。就是这两周毫无征兆地崩溃了，连我自己都觉得很陌生。现在连最基本的日常工作都做不好，这让我更加自责。",
+  "progress": "已完成0/6问卷，共5/42题完成"
+}

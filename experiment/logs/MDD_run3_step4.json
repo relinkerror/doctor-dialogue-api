@@ -1,0 +1,35 @@
+{
+  "persona_id": "MDD",
+  "run": 3,
+  "step": 4,
+  "dialog_history": [
+    {
+      "role": "user",
+      "content": "你好，我最近睡眠不好，想咨询一下。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来你最近睡眠质量不太好。能具体说说最近两周的睡眠情况吗？比如是入睡困难还是容易早醒？"
+    },
+    {
+      "role": "user",
+      "content": "我几乎整晚都睡不着，躺在床上翻来覆去到凌晨三四点才能勉强睡一会儿。有时候好不容易睡着了，不到两小时又会突然惊醒，然后就再也睡不着了。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来确实很困扰。除了失眠，最近两周情绪怎么样？比如会不会经常感到低落或对平时喜欢的事情提不起兴趣？"
+    },
+    {
+      "role": "user",
+      "content": "每天都像行尸走肉一样，连起床刷牙都觉得特别困难。以前周末最喜欢约朋友喝咖啡，现在看到手机消息提示都觉得烦。最可怕的是，我明明知道这样不对，但就是控制不住地觉得自己特别没用。"
+    },
+    {
+      "role": "assistant",
+      "content": "我理解这种感受一定很痛苦。你提到觉得自己没用，这种自我否定的想法持续多久了？另外，最近食欲方面有变化吗？"
+    }
+  ],
+  "current_question": "Presence, while depressed, of two (or more) of the following symptoms: 1. Poor appetite or overeating; 2. Insomnia or hypersomnia; 3. Low energy or fatigue; 4. Low self-esteem; 5. Poor concentration or difficulty making decisions; 6. Feelings of hopelessness.",
+  "doctor_ask": "我注意到你提到体重下降明显。除了食欲减退，平时工作或做决定时会不会觉得特别吃力？比如需要花比平时更多时间来完成简单的事情？",
+  "patient_reply": "是的，上周连最简单的报表都做错了三次。老板让我修改的时候，我坐在电脑前脑子一片空白，眼泪止不住地往下掉。现在连看邮件都要反复读好几遍才能理解内容，感觉整个人都变迟钝了。",
+  "progress": "已完成1/6问卷，共8/42题完成"
+}

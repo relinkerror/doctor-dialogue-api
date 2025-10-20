@@ -1,0 +1,75 @@
+{
+  "persona_id": "MDD",
+  "run": 4,
+  "step": 9,
+  "dialog_history": [
+    {
+      "role": "user",
+      "content": "你好，我最近睡眠不好，想咨询一下。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来你最近睡眠质量不太好。能具体说说最近两周的睡眠情况吗？比如每晚能睡几个小时，会不会经常醒来？"
+    },
+    {
+      "role": "user",
+      "content": "我几乎整晚都睡不着。躺在床上脑子里全是负面想法，翻来覆去到凌晨三四点才能勉强睡着。有时候刚睡着没多久就突然惊醒，然后就再也睡不着了。每天最多能睡两三个小时，白天整个人都是昏昏沉沉的。"
+    },
+    {
+      "role": "assistant",
+      "content": "除了失眠之外，最近两周你的情绪状态怎么样？比如会不会经常感到悲伤、空虚或者绝望？"
+    },
+    {
+      "role": "user",
+      "content": "我控制不住地一直哭。明明什么事都没发生，眼泪就突然流下来了。我觉得自己特别没用，工作也做不好，连最简单的报表都看不进去。有时候看着窗户，会想如果跳下去是不是就能解脱了。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来你正在经历一段非常艰难的时期。这种持续的低落情绪大概是从什么时候开始的？是最近才这样，还是已经持续比较长时间了？"
+    },
+    {
+      "role": "user",
+      "content": "就是这两周突然变成这样的。之前我都很正常，每天上班、健身、和朋友聚会都很开心。但这两周就像变了个人，对什么都提不起兴趣，连最喜欢的瑜伽课都取消了。最可怕的是我完全不知道为什么会变成这样。"
+    },
+    {
+      "role": "assistant",
+      "content": "我理解这种突然的情绪变化让你很困惑。能具体说说这两周有没有发生过什么特别的事情？或者身体上有没有什么不适？有时候生理因素也会影响情绪。"
+    },
+    {
+      "role": "user",
+      "content": "真的想不出任何原因。工作还是原来的工作，家里也没发生什么事。身体检查上个月刚做过，医生说一切正常。但就是突然之间，吃饭没胃口，体重掉了快5斤，整个人像被抽空了一样。"
+    },
+    {
+      "role": "assistant",
+      "content": "你提到体重明显下降和食欲减退，这两周睡眠情况怎么样？是整晚睡不着，还是容易早醒？"
+    },
+    {
+      "role": "user",
+      "content": "几乎整晚都睡不着。躺在床上翻来覆去到凌晨三四点才能勉强睡着，然后五六点又会突然惊醒。有时候醒来发现枕头都是湿的，自己都不知道什么时候哭的。白天上班时整个人都是飘的，连电脑屏幕上的字都看不清楚。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来真的很痛苦。除了这些，最近有没有觉得特别容易自责，或者对自己特别失望？比如反复想\"我什么都做不好\"这样的念头？"
+    },
+    {
+      "role": "user",
+      "content": "是的...我总觉得自己特别没用。明明工作很简单，但现在连回复邮件都要拖很久。昨天老板问我进度，我躲在洗手间哭了半小时。最可怕的是，我站在窗前的时候会想，如果跳下去是不是就轻松了..."
+    },
+    {
+      "role": "assistant",
+      "content": "我听到你说这些很担心。能告诉我这些负面想法和身体不适，跟你最近的生理周期有关系吗？比如月经前一周特别严重，来月经后会好转些？"
+    },
+    {
+      "role": "user",
+      "content": "不是经期的问题...我的经期一直很规律，而且这些症状是持续性的。上周刚结束经期，但情况反而更糟了。现在连洗澡都觉得特别累，有时候就坐在花洒下面发呆。"
+    },
+    {
+      "role": "assistant",
+      "content": "明白了。那最近有没有注意到其他身体变化？比如肌肉酸痛、头痛，或者觉得特别容易疲惫？这些症状会随着时间有变化吗？"
+    }
+  ],
+  "current_question": "One (or more) additional symptoms must be present to reach a total of five when combined with Criterion B: decreased interest in usual activities, subjective difficulty in concentration, lethargy or marked lack of energy, marked change in appetite or specific food cravings, hypersomnia or insomnia, a sense of being overwhelmed or out of control, physical symptoms such as breast tenderness or swelling, joint or muscle pain, bloating, or weight gain.",
+  "doctor_ask": "听起来这些症状确实在加重。你提到食欲减退和体重下降，最近有没有特别想吃某些食物？或者完全对食物失去兴趣？",
+  "patient_reply": "闻到饭菜味道就觉得恶心...以前最爱吃的火锅现在看到都想吐。同事硬塞给我的小饼干，放在嘴里嚼半天都咽不下去。昨天只喝了半碗粥，但胃里还是翻腾得厉害。",
+  "progress": "已完成2/6问卷，共20/42题完成"
+}

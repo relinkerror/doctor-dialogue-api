@@ -1,0 +1,453 @@
+{
+  "MDD": [
+    {
+      "id": "MDD_Q1",
+      "question": "Five (or more) of the following symptoms have been present during the same 2-week period and represent a change from previous functioning; at least one of the symptoms is either (1) depressed mood or (2) loss of interest or pleasure. Note: Do not include symptoms that are clearly attributable to another medical condition. 1. Depressed mood most of the day, nearly every day, as indicated by either subjective report (e.g., feels sad, empty, hopeless) or observation made by others (e.g., appears tearful). (Note: In children and adolescents, can be irritable mood.) 2. Markedly diminished interest or pleasure in all, or almost all, activities most of the day, nearly every day (as indicated by either subjective account or observation). 3. Significant weight loss when not dieting or weight gain (e.g., a change of more than 5% of body weight in a month), or decrease or increase in appetite nearly every day. (Note: In children, consider failure to make expected weight gain.) 4. Insomnia or hypersomnia nearly every day. 5. Psychomotor agitation or retardation nearly every day (observable by others, not merely subjective feelings of restlessness or being slowed down). 6. Fatigue or loss of energy nearly every day. 7. Feelings of worthlessness or excessive or inappropriate guilt (which may be delusional) nearly every day (not merely self-reproach or guilt about being sick). 8. Diminished ability to think or concentrate, or indecisiveness, nearly every day (either by subjective account or as observed by others). 9. Recurrent thoughts of death (not just fear of dying), recurrent suicidal ideation without a specific plan, or a suicide attempt or a specific plan for committing suicide.",
+      "status": null,
+      "depends_on": [],
+      "remarks": []
+    },
+    {
+      "id": "MDD_Q2",
+      "question": "The symptoms cause clinically significant distress or impairment in social, occupational, or other important areas of functioning.",
+      "status": null,
+      "depends_on": [
+        "MDD_Q1"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "MDD_Q3",
+      "question": "The episode is not attributable to the physiological effects of a substance or another medical condition.",
+      "status": null,
+      "depends_on": [
+        "MDD_Q1"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "MDD_Q4",
+      "question": "At least one major depressive episode is not better explained by schizoaffective disorder and is not superimposed on schizophrenia, schizophreniform disorder, delusional disorder, or other specified and unspecified schizophrenia spectrum and other psychotic disorders.",
+      "status": null,
+      "depends_on": [
+        "MDD_Q1"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "MDD_Q5",
+      "question": "There has never been a manic episode or a hypomanic episode. Note: This exclusion does not apply if all of the manic-like or hypomanic-like episodes are substance-induced or are attributable to the physiological effects of another medical condition.",
+      "status": null,
+      "depends_on": [
+        "MDD_Q1"
+      ],
+      "remarks": []
+    }
+  ],
+  "PDD": [
+    {
+      "id": "PDD_Q1",
+      "question": "Depressed mood for most of the day, for more days than not, as indicated by either subjective account or observation by others, for at least 2 years. Note: In children and adolescents, mood can be irritable and duration must be at least 1 year.",
+      "status": null,
+      "depends_on": [],
+      "remarks": []
+    },
+    {
+      "id": "PDD_Q2",
+      "question": "Presence, while depressed, of two (or more) of the following symptoms: 1. Poor appetite or overeating; 2. Insomnia or hypersomnia; 3. Low energy or fatigue; 4. Low self-esteem; 5. Poor concentration or difficulty making decisions; 6. Feelings of hopelessness.",
+      "status": null,
+      "depends_on": [
+        "PDD_Q1"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "PDD_Q3",
+      "question": "During the 2-year period (1 year for children or adolescents) of the disturbance, the individual has never been without the symptoms in Criteria A and B for more than 2 months at a time.",
+      "status": null,
+      "depends_on": [
+        "PDD_Q1",
+        "PDD_Q2"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "PDD_Q4",
+      "question": "Criteria for a major depressive disorder may be continuously present for 2 years.",
+      "status": null,
+      "depends_on": [
+        "PDD_Q1",
+        "PDD_Q2",
+        "PDD_Q3"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "PDD_Q5",
+      "question": "There has never been a manic episode or a hypomanic episode.",
+      "status": null,
+      "depends_on": [
+        "PDD_Q1",
+        "PDD_Q2",
+        "PDD_Q3",
+        "PDD_Q4"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "PDD_Q6",
+      "question": "The disturbance is not better explained by a persistent schizoaffective disorder, schizophrenia, delusional disorder, or other specified or unspecified schizophrenia spectrum and other psychotic disorder.",
+      "status": null,
+      "depends_on": [
+        "PDD_Q1",
+        "PDD_Q2",
+        "PDD_Q3",
+        "PDD_Q4",
+        "PDD_Q5"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "PDD_Q7",
+      "question": "The symptoms are not attributable to the physiological effects of a substance (e.g., a drug of abuse, a medication) or another medical or neurological condition (e.g., hypothyroidism).",
+      "status": null,
+      "depends_on": [
+        "PDD_Q1",
+        "PDD_Q2",
+        "PDD_Q3",
+        "PDD_Q4",
+        "PDD_Q5",
+        "PDD_Q6"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "PDD_Q8",
+      "question": "The symptoms cause clinically significant distress or impairment in social, occupational, or other important areas of functioning.",
+      "status": null,
+      "depends_on": [
+        "PDD_Q1",
+        "PDD_Q2",
+        "PDD_Q3",
+        "PDD_Q4",
+        "PDD_Q5",
+        "PDD_Q6",
+        "PDD_Q7"
+      ],
+      "remarks": []
+    }
+  ],
+  "SMDID": [
+    {
+      "id": "SMDID_Q1",
+      "question": "A prominent and persistent disturbance in mood that predominates in the clinical picture and is characterized by depressed mood or markedly diminished interest or pleasure in all, or almost all, activities.",
+      "status": null,
+      "depends_on": [],
+      "remarks": []
+    },
+    {
+      "id": "SMDID_Q2",
+      "question": "There is evidence from the history, physical examination, or laboratory findings of both: (1) the symptoms in Criterion A developed during or soon after substance intoxication or withdrawal or after exposure to or withdrawal from a medication; and (2) the involved substance/medication is capable of producing the symptoms in Criterion A.",
+      "status": null,
+      "depends_on": [
+        "SMDID_Q1"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "SMDID_Q3",
+      "question": "The disturbance is not better explained by a depressive disorder that is not substance/medication-induced. Evidence of an independent depressive disorder could include: symptoms preceded the onset of use; symptoms persist for a substantial period (e.g., about 1 month) after cessation of withdrawal or intoxication; or other evidence of non-substance/medication-related depressive episodes.",
+      "status": null,
+      "depends_on": [
+        "SMDID_Q1",
+        "SMDID_Q2"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "SMDID_Q4",
+      "question": "The disturbance does not occur exclusively during the course of a delirium.",
+      "status": null,
+      "depends_on": [
+        "SMDID_Q1",
+        "SMDID_Q2",
+        "SMDID_Q3"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "SMDID_Q5",
+      "question": "The disturbance causes clinically significant distress or impairment in social, occupational, or other important areas of functioning.",
+      "status": null,
+      "depends_on": [
+        "SMDID_Q1",
+        "SMDID_Q2",
+        "SMDID_Q3",
+        "SMDID_Q4"
+      ],
+      "remarks": []
+    }
+  ],
+  "DDAMC": [
+    {
+      "id": "DDAMC_Q1",
+      "question": "A prominent and persistent disturbance in mood that predominates in the clinical picture and is characterized by depressed mood or markedly diminished interest or pleasure in all, or almost all, activities.",
+      "status": null,
+      "depends_on": [],
+      "remarks": []
+    },
+    {
+      "id": "DDAMC_Q2",
+      "question": "There is evidence from the history, physical examination, or laboratory findings of both: (1) the symptoms in Criterion A developed during or soon after substance intoxication or withdrawal or after exposure to or withdrawal from a medication; and (2) the involved substance/medication is capable of producing the symptoms in Criterion A.",
+      "status": null,
+      "depends_on": [
+        "DDAMC_Q1"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "DDAMC_Q3",
+      "question": "The disturbance is not better explained by a depressive disorder that is not substance/medication-induced. Evidence of an independent depressive disorder could include: symptoms preceded the onset of the substance/medication use; symptoms persist for a substantial period of time (e.g., about 1 month) after cessation of acute withdrawal or severe intoxication; or other evidence of recurrent non-substance/medication-related episodes.",
+      "status": null,
+      "depends_on": [
+        "DDAMC_Q1",
+        "DDAMC_Q2"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "DDAMC_Q4",
+      "question": "The disturbance does not occur exclusively during the course of a delirium.",
+      "status": null,
+      "depends_on": [
+        "DDAMC_Q1",
+        "DDAMC_Q2",
+        "DDAMC_Q3"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "DDAMC_Q5",
+      "question": "The disturbance causes clinically significant distress or impairment in social, occupational, or other important areas of functioning.",
+      "status": null,
+      "depends_on": [
+        "DDAMC_Q1",
+        "DDAMC_Q2",
+        "DDAMC_Q3",
+        "DDAMC_Q4"
+      ],
+      "remarks": []
+    }
+  ],
+  "DMDD": [
+    {
+      "id": "DMDD_Q1",
+      "question": "Severe recurrent temper outbursts manifested verbally (e.g., verbal rages) and/or behaviorally (e.g., physical aggression toward people or property) that are grossly out of proportion in intensity or duration to the situation or provocation.",
+      "status": null,
+      "depends_on": [],
+      "remarks": []
+    },
+    {
+      "id": "DMDD_Q2",
+      "question": "The temper outbursts are inconsistent with developmental level.",
+      "status": null,
+      "depends_on": [
+        "DMDD_Q1"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "DMDD_Q3",
+      "question": "The temper outbursts occur, on average, three or more times per week.",
+      "status": null,
+      "depends_on": [
+        "DMDD_Q1"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "DMDD_Q4",
+      "question": "The mood between temper outbursts is persistently irritable or angry most of the day, nearly every day, and is observable by others (e.g., parents, teachers, peers).",
+      "status": null,
+      "depends_on": [
+        "DMDD_Q1"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "DMDD_Q5",
+      "question": "Criteria A–D have been present for 12 or more months. Throughout that time, the individual has not had a period lasting 3 or more consecutive months without all of the symptoms in Criteria A–D.",
+      "status": null,
+      "depends_on": [
+        "DMDD_Q1",
+        "DMDD_Q2",
+        "DMDD_Q3",
+        "DMDD_Q4"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "DMDD_Q6",
+      "question": "Criteria A and D are present in at least two of three settings (i.e., at home, at school, with peers) and are severe in at least one of these.",
+      "status": null,
+      "depends_on": [
+        "DMDD_Q1",
+        "DMDD_Q4"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "DMDD_Q7",
+      "question": "The diagnosis should not be made for the first time before age 6 years or after age 18 years.",
+      "status": null,
+      "depends_on": [],
+      "remarks": []
+    },
+    {
+      "id": "DMDD_Q8",
+      "question": "By history or observation, the age at onset of Criteria A–E is before 10 years.",
+      "status": null,
+      "depends_on": [
+        "DMDD_Q1",
+        "DMDD_Q2",
+        "DMDD_Q3",
+        "DMDD_Q4",
+        "DMDD_Q5"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "DMDD_Q9",
+      "question": "There has never been a distinct period lasting more than 1 day during which the full symptom criteria, except duration, for a manic or hypomanic episode have been met. Note: Developmentally appropriate mood elevation, such as occurs in the context of a highly positive event or its anticipation, should not be considered as a symptom of mania or hypomania.",
+      "status": null,
+      "depends_on": [
+        "DMDD_Q1",
+        "DMDD_Q2",
+        "DMDD_Q3",
+        "DMDD_Q4",
+        "DMDD_Q5"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "DMDD_Q10",
+      "question": "The behaviors do not occur exclusively during an episode of major depressive disorder and are not better explained by another mental disorder (e.g., autism spectrum disorder, posttraumatic stress disorder, separation anxiety disorder, persistent depressive disorder). Note: This diagnosis cannot coexist with oppositional defiant disorder, intermittent explosive disorder, or bipolar disorder, though it can coexist with others, including major depressive disorder, attention-deficit/hyperactivity disorder, conduct disorder, and substance use disorders. Individuals whose symptoms meet criteria for both disruptive mood dysregulation disorder and oppositional defiant disorder should only be given the diagnosis of disruptive mood dysregulation disorder. If an individual has ever experienced a manic or hypomanic episode, the diagnosis of disruptive mood dysregulation disorder should not be assigned.",
+      "status": null,
+      "depends_on": [
+        "DMDD_Q1",
+        "DMDD_Q2",
+        "DMDD_Q3",
+        "DMDD_Q4",
+        "DMDD_Q5",
+        "DMDD_Q9"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "DMDD_Q11",
+      "question": "The symptoms are not attributable to the physiological effects of a substance (e.g., drug of abuse, medication) or another medical or neurological condition (e.g., traumatic brain injury, seizure disorder).",
+      "status": null,
+      "depends_on": [
+        "DMDD_Q1",
+        "DMDD_Q2",
+        "DMDD_Q3",
+        "DMDD_Q4",
+        "DMDD_Q5"
+      ],
+      "remarks": []
+    }
+  ],
+  "PMDD": [
+    {
+      "id": "PMDD_Q1",
+      "question": "In the majority of menstrual cycles, at least five symptoms must be present in the final week before the onset of menses, start to improve within a few days after the onset of menses, and become minimal or absent in the week postmenses.",
+      "status": null,
+      "depends_on": [],
+      "remarks": []
+    },
+    {
+      "id": "PMDD_Q2",
+      "question": "One (or more) of the following core symptoms must be present: marked affective lability (e.g., mood swings; feeling suddenly sad or tearful, or increased sensitivity to rejection), marked irritability or anger or increased interpersonal conflicts, marked depressed mood, feelings of hopelessness, or self-deprecating thoughts, marked anxiety, tension, and/or feelings of being keyed up or on edge.",
+      "status": null,
+      "depends_on": [
+        "PMDD_Q1"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "PMDD_Q3",
+      "question": "One (or more) additional symptoms must be present to reach a total of five when combined with Criterion B: decreased interest in usual activities, subjective difficulty in concentration, lethargy or marked lack of energy, marked change in appetite or specific food cravings, hypersomnia or insomnia, a sense of being overwhelmed or out of control, physical symptoms such as breast tenderness or swelling, joint or muscle pain, bloating, or weight gain.",
+      "status": null,
+      "depends_on": [
+        "PMDD_Q1",
+        "PMDD_Q2"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "PMDD_Q4",
+      "question": "The symptoms in Criteria A–C must have been met for most menstrual cycles that occurred in the preceding year.",
+      "status": null,
+      "depends_on": [
+        "PMDD_Q1",
+        "PMDD_Q2",
+        "PMDD_Q3"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "PMDD_Q5",
+      "question": "The symptoms cause clinically significant distress or interference with work, school, usual social activities, or relationships with others (e.g., avoidance of social activities; decreased productivity and efficiency at work, school, or home).",
+      "status": null,
+      "depends_on": [
+        "PMDD_Q1",
+        "PMDD_Q2",
+        "PMDD_Q3",
+        "PMDD_Q4"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "PMDD_Q6",
+      "question": "The disturbance is not merely an exacerbation of the symptoms of another disorder, such as major depressive disorder, panic disorder, persistent depressive disorder, or a personality disorder (although it may co-occur with any of these disorders).",
+      "status": null,
+      "depends_on": [
+        "PMDD_Q1",
+        "PMDD_Q2",
+        "PMDD_Q3",
+        "PMDD_Q4",
+        "PMDD_Q5"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "PMDD_Q7",
+      "question": "Criterion A should be confirmed by prospective daily ratings during at least two symptomatic cycles. (Note: The diagnosis may be made provisionally prior to this confirmation.)",
+      "status": null,
+      "depends_on": [
+        "PMDD_Q1",
+        "PMDD_Q2",
+        "PMDD_Q3",
+        "PMDD_Q4",
+        "PMDD_Q5",
+        "PMDD_Q6"
+      ],
+      "remarks": []
+    },
+    {
+      "id": "PMDD_Q8",
+      "question": "The symptoms are not attributable to the physiological effects of a substance (e.g., a drug of abuse, a medication, other treatment) or another medical or neurological condition (e.g., hyperthyroidism).",
+      "status": null,
+      "depends_on": [
+        "PMDD_Q1",
+        "PMDD_Q2",
+        "PMDD_Q3",
+        "PMDD_Q4",
+        "PMDD_Q5",
+        "PMDD_Q6",
+        "PMDD_Q7"
+      ],
+      "remarks": []
+    }
+  ]
+}

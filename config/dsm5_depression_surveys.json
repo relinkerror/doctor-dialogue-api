@@ -1,0 +1,34 @@
+{
+  "surveys": [
+    {
+      "id": "MDD",
+      "name": "Major Depressive Disorder",
+      "file": "Major_Depressive_Disorder.txt"
+    },
+    {
+      "id": "PDD",
+      "name": "Persistent Depressive Disorder",
+      "file": "Persistent_Depressive_Disorder.txt"
+    },
+    {
+      "id": "SMDID",
+      "name": "Substance/Medication-Induced Depressive Disorder",
+      "file": "Substance_Medication-Induced_Depressive_Disorder.txt"
+    },
+    {
+      "id": "DDAMC",
+      "name": "Depressive Disorder Due To Another Medical Condition",
+      "file": "Depressive_Disorder_Due_To_Another_Medical_Condition.txt"
+    },
+    {
+      "id": "DMDD",
+      "name": "Disruptive Mood Dysregulation Disorder",
+      "file": "Disruptive_Mood_Dysregulation_Disorder.txt"
+    },
+    {
+      "id": "PMDD",
+      "name": "Premenstrual Dysphoric Disorder",
+      "file": "Premenstrual_Dysphoric_Disorder.txt"
+    }
+  ]
+}

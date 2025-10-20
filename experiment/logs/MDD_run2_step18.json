@@ -1,0 +1,91 @@
+{
+  "persona_id": "MDD",
+  "run": 2,
+  "step": 18,
+  "dialog_history": [
+    {
+      "role": "user",
+      "content": "经常觉得这辈子就这样了。看着天花板想为什么别人都好好的，只有我连睡觉都做不到。有时候会想到如果一直这样下去，可能离开对大家都好。"
+    },
+    {
+      "role": "assistant",
+      "content": "这些念头让你感到害怕吗？最近有没有具体计划或行动？"
+    },
+    {
+      "role": "user",
+      "content": "没有具体计划…但经过河边时会停下来看很久。上周把药箱里的止痛药扔了，怕自己冲动。"
+    },
+    {
+      "role": "assistant",
+      "content": "能告诉我扔掉药的时候是怎么想的吗？"
+    },
+    {
+      "role": "user",
+      "content": "当时手一直在抖。明明知道不该那么想，可是眼泪止不住。最后把药片冲进下水道的时候，整个人顺着墙滑下去哭了很久。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来那天真的特别难熬。除了睡眠和情绪问题，身体上有没有其他不舒服的感觉？比如心慌或者头痛之类的？"
+    },
+    {
+      "role": "user",
+      "content": "胸口总是发闷，像被石头压着。有时候早上醒来会莫名其妙心悸，明明什么都没想却突然喘不过气。"
+    },
+    {
+      "role": "assistant",
+      "content": "这种喘不过气的感觉大概多久会出现一次？每次会持续几分钟还是更久？"
+    },
+    {
+      "role": "user",
+      "content": "最近几乎每天都有。最严重的时候会持续十多分钟，必须坐下来按住胸口才能慢慢缓过来。"
+    },
+    {
+      "role": "assistant",
+      "content": "除了身体上的不适，最近还愿意做以前喜欢的事情吗？比如和朋友见面或者兴趣爱好之类的。"
+    },
+    {
+      "role": "user",
+      "content": "完全不想见人。上周闺蜜约我去逛街，我找借口推掉了。连最喜欢的油画颜料都积灰了，感觉什么都提不起劲。"
+    },
+    {
+      "role": "assistant",
+      "content": "这种对事情失去兴趣的状态持续多久了？是从最近才开始，还是已经有一段时间了？"
+    },
+    {
+      "role": "user",
+      "content": "大概两周前突然变成这样的。以前每周都会画油画，现在连画笔都拿不起来，看到画架就觉得心烦。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来这种变化来得比较突然。除了画画和社交，还有其他曾经让你开心的事情现在也完全不想做了吗？"
+    },
+    {
+      "role": "user",
+      "content": "连最爱的烘焙都放弃了。上周儿子生日我连蛋糕都没做，直接买了现成的。明明知道这样不对，但就是提不起精神准备。"
+    },
+    {
+      "role": "assistant",
+      "content": "这种提不起劲的感觉会影响你日常的工作或家务吗？比如会不会觉得完成基本任务都很困难？"
+    },
+    {
+      "role": "user",
+      "content": "上班时对着电脑发呆一整天，连最简单的报表都做不完。家里堆了好几天的碗筷都没洗，明明看得见却就是不想动。"
+    },
+    {
+      "role": "assistant",
+      "content": "这些状况出现后，有没有让你避开和朋友家人的相处？或者因为情绪问题和身边人起过争执？"
+    },
+    {
+      "role": "user",
+      "content": "我推掉了所有朋友的聚会邀请，连家人的电话都不想接。丈夫问我怎么了，我就忍不住对他发脾气，事后又特别后悔。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来这些状况确实影响到生活的很多方面了。你之前提到过胸闷心悸的情况，这些身体不适和情绪波动有关联吗？比如生气或焦虑时会不会更容易胸闷？"
+    }
+  ],
+  "current_question": "The symptoms cause clinically significant distress or interference with work, school, usual social activities, or relationships with others (e.g., avoidance of social activities; decreased productivity and efficiency at work, school, or home).",
+  "doctor_ask": "这些症状出现的时间，和你月经周期有关联吗？比如是不是月经来前一周特别明显，来之后就会缓解些？",
+  "patient_reply": "和月经没有关系。这两周每天都这样，反而月经期间稍微能睡得好一点，但情绪还是持续低落。",
+  "progress": "已完成1/6问卷，共14/42题完成"
+}

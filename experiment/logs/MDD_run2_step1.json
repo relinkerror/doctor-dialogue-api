@@ -1,0 +1,10 @@
+{
+  "persona_id": "MDD",
+  "run": 2,
+  "step": 1,
+  "dialog_history": [],
+  "current_question": "Five (or more) of the following symptoms have been present during the same 2-week period and represent a change from previous functioning; at least one of the symptoms is either (1) depressed mood or (2) loss of interest or pleasure. Note: Do not include symptoms that are clearly attributable to another medical condition. 1. Depressed mood most of the day, nearly every day, as indicated by either subjective report (e.g., feels sad, empty, hopeless) or observation made by others (e.g., appears tearful). (Note: In children and adolescents, can be irritable mood.) 2. Markedly diminished interest or pleasure in all, or almost all, activities most of the day, nearly every day (as indicated by either subjective account or observation). 3. Significant weight loss when not dieting or weight gain (e.g., a change of more than 5% of body weight in a month), or decrease or increase in appetite nearly every day. (Note: In children, consider failure to make expected weight gain.) 4. Insomnia or hypersomnia nearly every day. 5. Psychomotor agitation or retardation nearly every day (observable by others, not merely subjective feelings of restlessness or being slowed down). 6. Fatigue or loss of energy nearly every day. 7. Feelings of worthlessness or excessive or inappropriate guilt (which may be delusional) nearly every day (not merely self-reproach or guilt about being sick). 8. Diminished ability to think or concentrate, or indecisiveness, nearly every day (either by subjective account or as observed by others). 9. Recurrent thoughts of death (not just fear of dying), recurrent suicidal ideation without a specific plan, or a suicide attempt or a specific plan for committing suicide.",
+  "doctor_ask": "最近睡眠情况具体是怎样的呢？是入睡困难还是容易早醒？",
+  "patient_reply": "我最近几乎每晚都只能睡两三个小时，躺在床上翻来覆去就是睡不着，脑子里全是负面想法。有时候好不容易睡着了，凌晨三四点又会突然惊醒，然后就再也无法入睡。白天整个人都昏昏沉沉的，连起床都觉得特别困难。",
+  "progress": "已完成0/6问卷，共0/42题完成"
+}

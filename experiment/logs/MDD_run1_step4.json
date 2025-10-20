@@ -1,0 +1,35 @@
+{
+  "persona_id": "MDD",
+  "run": 1,
+  "step": 4,
+  "dialog_history": [
+    {
+      "role": "user",
+      "content": "你好，我最近睡眠不好，想咨询一下。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来你最近睡眠方面遇到了一些困扰。除了睡眠问题，最近两周内你有没有感觉情绪特别低落，或者对平时喜欢的事情提不起兴趣？"
+    },
+    {
+      "role": "user",
+      "content": "我确实感觉特别低落，做什么都提不起劲。以前我很喜欢和朋友聚会，现在连手机都不想看。每天醒来就觉得特别累，好像整个世界都灰蒙蒙的。"
+    },
+    {
+      "role": "assistant",
+      "content": "这种情况持续多久了呢？除了情绪低落和失去兴趣，最近有没有注意到食欲或体重的明显变化？"
+    },
+    {
+      "role": "user",
+      "content": "大概有两周了。我几乎吃不下东西，体重掉了快五公斤。有时候强迫自己吃一点，但很快就会恶心反胃。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来确实挺难受的。那睡眠方面具体是什么情况呢？是难以入睡，还是容易早醒，或者睡得特别多？"
+    }
+  ],
+  "current_question": "Five (or more) of the following symptoms have been present during the same 2-week period and represent a change from previous functioning; at least one of the symptoms is either (1) depressed mood or (2) loss of interest or pleasure. Note: Do not include symptoms that are clearly attributable to another medical condition. 1. Depressed mood most of the day, nearly every day, as indicated by either subjective report (e.g., feels sad, empty, hopeless) or observation made by others (e.g., appears tearful). (Note: In children and adolescents, can be irritable mood.) 2. Markedly diminished interest or pleasure in all, or almost all, activities most of the day, nearly every day (as indicated by either subjective account or observation). 3. Significant weight loss when not dieting or weight gain (e.g., a change of more than 5% of body weight in a month), or decrease or increase in appetite nearly every day. (Note: In children, consider failure to make expected weight gain.) 4. Insomnia or hypersomnia nearly every day. 5. Psychomotor agitation or retardation nearly every day (observable by others, not merely subjective feelings of restlessness or being slowed down). 6. Fatigue or loss of energy nearly every day. 7. Feelings of worthlessness or excessive or inappropriate guilt (which may be delusional) nearly every day (not merely self-reproach or guilt about being sick). 8. Diminished ability to think or concentrate, or indecisiveness, nearly every day (either by subjective account or as observed by others). 9. Recurrent thoughts of death (not just fear of dying), recurrent suicidal ideation without a specific plan, or a suicide attempt or a specific plan for committing suicide.",
+  "doctor_ask": "睡眠不足确实会让人更疲惫。除了这些，最近会不会觉得自己动作或说话比平时慢很多，或者反而特别坐立不安？",
+  "patient_reply": "我感觉整个人都变得很迟钝，工作的时候完全集中不了注意力。有时候明明很累，但心里又莫名烦躁，坐也不是站也不是。",
+  "progress": "已完成0/6问卷，共0/42题完成"
+}

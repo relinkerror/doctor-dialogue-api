@@ -1,0 +1,59 @@
+{
+  "persona_id": "MDD",
+  "run": 5,
+  "step": 7,
+  "dialog_history": [
+    {
+      "role": "user",
+      "content": "你好，我最近睡眠不好，想咨询一下。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来你最近遇到了睡眠问题。除了失眠，最近两周内你是否有感到情绪低落或对平时喜欢的事情失去兴趣？"
+    },
+    {
+      "role": "user",
+      "content": "是的，我完全提不起精神做任何事情。以前我很喜欢和朋友聚会，现在连回复消息都觉得累。每天醒来就觉得特别绝望，好像整个世界都是灰色的。"
+    },
+    {
+      "role": "assistant",
+      "content": "我理解这种感受。能具体说说你的食欲和体重有变化吗？比如最近一个月有没有明显增加或减少？"
+    },
+    {
+      "role": "user",
+      "content": "我几乎吃不下东西。以前午餐能吃完整份便当，现在吃两口就反胃。上周称体重发现轻了5公斤，但我根本没在减肥。"
+    },
+    {
+      "role": "assistant",
+      "content": "明白了。除了食欲和睡眠问题，你平时会觉得自己特别容易疲劳吗？比如做简单家务或工作都觉得力不从心？"
+    },
+    {
+      "role": "user",
+      "content": "是的，连起床刷牙都要花很大力气。上周开会时我完全无法集中注意力，领导说的话一个字都听不进去。我觉得自己特别没用，连最基本的工作都做不好。"
+    },
+    {
+      "role": "assistant",
+      "content": "我注意到你提到\"觉得自己特别没用\"。这种自我否定的想法是最近才出现的，还是持续比较久了？"
+    },
+    {
+      "role": "user",
+      "content": "就是这两周突然出现的。以前我对自己挺有信心的，现在却总觉得自己一无是处。有时候看着镜子里的自己都觉得厌恶，甚至...甚至想过活着太痛苦了。"
+    },
+    {
+      "role": "assistant",
+      "content": "我听到你说到活着很痛苦的想法。能告诉我这种念头出现的频率吗？比如每天都会想到，还是偶尔出现？"
+    },
+    {
+      "role": "user",
+      "content": "几乎每天都会冒出来...特别是半夜醒来的时候。我知道这样不对，但就是控制不住地想着如果消失就好了。有时候会站在阳台上发呆很久。"
+    },
+    {
+      "role": "assistant",
+      "content": "你提到站在阳台发呆的情况。这段时间有可以倾诉的人吗？家人或朋友知道你现在的情况吗？"
+    }
+  ],
+  "current_question": "One (or more) additional symptoms must be present to reach a total of five when combined with Criterion B: decreased interest in usual activities, subjective difficulty in concentration, lethargy or marked lack of energy, marked change in appetite or specific food cravings, hypersomnia or insomnia, a sense of being overwhelmed or out of control, physical symptoms such as breast tenderness or swelling, joint or muscle pain, bloating, or weight gain.",
+  "doctor_ask": "我理解你不想让亲友担心的心情。能说说最近身体上有没有其他变化？比如乳房胀痛、关节酸痛或者特别想吃某种食物之类的？",
+  "patient_reply": "好像...确实有。最近胸部偶尔会胀痛，而且特别想吃甜食，虽然最后也没吃几口。这和我的情绪有关系吗？我一直以为只是单纯的心情不好。",
+  "progress": "已完成2/6问卷，共13/42题完成"
+}

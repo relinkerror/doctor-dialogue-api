@@ -1,0 +1,91 @@
+{
+  "persona_id": "MDD",
+  "run": 1,
+  "step": 13,
+  "dialog_history": [
+    {
+      "role": "user",
+      "content": "大概有两周了。我几乎吃不下东西，体重掉了快五公斤。有时候强迫自己吃一点，但很快就会恶心反胃。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来确实挺难受的。那睡眠方面具体是什么情况呢？是难以入睡，还是容易早醒，或者睡得特别多？"
+    },
+    {
+      "role": "user",
+      "content": "我躺在床上好几个小时都睡不着，脑子里全是负面想法。就算睡着了也很容易惊醒，然后再也睡不着了。现在每天可能就睡两三个小时。"
+    },
+    {
+      "role": "assistant",
+      "content": "睡眠不足确实会让人更疲惫。除了这些，最近会不会觉得自己动作或说话比平时慢很多，或者反而特别坐立不安？"
+    },
+    {
+      "role": "user",
+      "content": "我感觉整个人都变得很迟钝，工作的时候完全集中不了注意力。有时候明明很累，但心里又莫名烦躁，坐也不是站也不是。"
+    },
+    {
+      "role": "assistant",
+      "content": "这种身心不一致的感觉确实很折磨人。最近会不会经常感到精力不足，或者觉得自己没什么价值？"
+    },
+    {
+      "role": "user",
+      "content": "是的，连起床刷牙都觉得特别费力。我总觉得自己特别失败，明明都是小事却什么都做不好，甚至觉得活着就是在拖累别人。"
+    },
+    {
+      "role": "assistant",
+      "content": "听到你这么说很让人担心。这种无价值感和疲惫感持续多久了？最近有没有出现过伤害自己的念头？"
+    },
+    {
+      "role": "user",
+      "content": "从两周前突然就这样了。上周确实想过如果消失就好了，但想到家人还是没敢做傻事。现在每天躺在床上都会不受控制地冒出这些念头。"
+    },
+    {
+      "role": "assistant",
+      "content": "这些念头出现频率高吗？比如每天都会想到，还是偶尔出现？我们需要特别关注这个情况。"
+    },
+    {
+      "role": "user",
+      "content": "几乎每天都会反复出现。特别是晚上失眠的时候，脑子里会不停想着这些，有时候要用力掐自己手臂才能稍微冷静下来。"
+    },
+    {
+      "role": "assistant",
+      "content": "我需要确认下，除了睡眠和食欲问题，你平时会不会经常感到疲惫，或者对自己评价特别低？"
+    },
+    {
+      "role": "user",
+      "content": "每天都很累，明明没做什么却像跑了马拉松。上周连回复工作邮件都做不到，看着电脑屏幕眼泪就往下掉。同事肯定觉得我很没用吧。"
+    },
+    {
+      "role": "assistant",
+      "content": "这种自我否定的想法确实很折磨人。能说说除了工作邮件，还有其他事情让你觉得难以集中注意力或做决定吗？"
+    },
+    {
+      "role": "user",
+      "content": "昨天想泡杯茶，站在厨房盯着水壶发了十分钟呆，最后连开关都忘了按。超市购物时对着货架完全选不了东西，空着手就回家了。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来做决定对你来说变得特别困难。那这段时间有没有出现过“再怎么努力也没用”或者对未来特别绝望的念头？"
+    },
+    {
+      "role": "user",
+      "content": "几乎每天都会反复出现。特别是晚上失眠的时候，脑子里会不停想着这些，有时候要用力掐自己手臂才能稍微冷静下来。"
+    },
+    {
+      "role": "assistant",
+      "content": "（记录自伤行为作为风险信号）你提到会掐手臂来缓解情绪，这种情况大概多久发生一次？"
+    },
+    {
+      "role": "user",
+      "content": "最近几乎每晚都会这样。上周有三天掐得特别用力，第二天上班时还得用长袖遮着淤青。"
+    },
+    {
+      "role": "assistant",
+      "content": "我注意到你提到这些症状是两周前突然出现的。那段时间有没有发生什么特别的事情，或者身体上有什么变化？"
+    }
+  ],
+  "current_question": "One (or more) additional symptoms must be present to reach a total of five when combined with Criterion B: decreased interest in usual activities, subjective difficulty in concentration, lethargy or marked lack of energy, marked change in appetite or specific food cravings, hypersomnia or insomnia, a sense of being overwhelmed or out of control, physical symptoms such as breast tenderness or swelling, joint or muscle pain, bloating, or weight gain.",
+  "doctor_ask": "听起来确实很突然。能问问你最近一次月经是什么时候开始的？症状出现和月经周期有关系吗？",
+  "patient_reply": "两周前正是月经结束的时候。这个月周期很规律，和往常没什么不同。",
+  "progress": "已完成0/6问卷，共7/42题完成"
+}

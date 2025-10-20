@@ -1,0 +1,59 @@
+{
+  "persona_id": "MDD",
+  "run": 3,
+  "step": 7,
+  "dialog_history": [
+    {
+      "role": "user",
+      "content": "你好，我最近睡眠不好，想咨询一下。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来你最近睡眠质量不太好。能具体说说最近两周的睡眠情况吗？比如是入睡困难还是容易早醒？"
+    },
+    {
+      "role": "user",
+      "content": "我几乎整晚都睡不着，躺在床上翻来覆去到凌晨三四点才能勉强睡一会儿。有时候好不容易睡着了，不到两小时又会突然惊醒，然后就再也睡不着了。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来确实很困扰。除了失眠，最近两周情绪怎么样？比如会不会经常感到低落或对平时喜欢的事情提不起兴趣？"
+    },
+    {
+      "role": "user",
+      "content": "每天都像行尸走肉一样，连起床刷牙都觉得特别困难。以前周末最喜欢约朋友喝咖啡，现在看到手机消息提示都觉得烦。最可怕的是，我明明知道这样不对，但就是控制不住地觉得自己特别没用。"
+    },
+    {
+      "role": "assistant",
+      "content": "我理解这种感受一定很痛苦。你提到觉得自己没用，这种自我否定的想法持续多久了？另外，最近食欲方面有变化吗？"
+    },
+    {
+      "role": "user",
+      "content": "就是从这两周开始的，突然就觉得活着特别没意思。吃饭也是，以前最爱吃的火锅现在看着都想吐，勉强吃两口就饱了。体重掉了快5公斤，但我连称体重的力气都没有。"
+    },
+    {
+      "role": "assistant",
+      "content": "我注意到你提到体重下降明显。除了食欲减退，平时工作或做决定时会不会觉得特别吃力？比如需要花比平时更多时间来完成简单的事情？"
+    },
+    {
+      "role": "user",
+      "content": "是的，上周连最简单的报表都做错了三次。老板让我修改的时候，我坐在电脑前脑子一片空白，眼泪止不住地往下掉。现在连看邮件都要反复读好几遍才能理解内容，感觉整个人都变迟钝了。"
+    },
+    {
+      "role": "assistant",
+      "content": "这种注意力不集中的情况确实会影响工作。你刚才提到\"活着没意思\"，这种绝望感是偶尔出现，还是最近经常会有这样的念头？"
+    },
+    {
+      "role": "user",
+      "content": "几乎每天都会想到。特别是凌晨醒来的时候，会盯着天花板想\"如果就这样消失就好了\"。但想到父母会伤心，又不敢真的做什么。这种矛盾让我更痛苦，连哭都哭不出来了。"
+    },
+    {
+      "role": "assistant",
+      "content": "我理解这种矛盾感让你很煎熬。能具体说说最近两周有没有什么特别的事情发生吗？比如工作压力突然增大，或者人际关系方面的变化？"
+    }
+  ],
+  "current_question": "One (or more) additional symptoms must be present to reach a total of five when combined with Criterion B: decreased interest in usual activities, subjective difficulty in concentration, lethargy or marked lack of energy, marked change in appetite or specific food cravings, hypersomnia or insomnia, a sense of being overwhelmed or out of control, physical symptoms such as breast tenderness or swelling, joint or muscle pain, bloating, or weight gain.",
+  "doctor_ask": "你提到症状是突然出现的。能回忆一下这种情况和你的生理周期有没有关联？比如月经前一周症状会特别明显，来月经后稍微缓解？",
+  "patient_reply": "这个我倒没注意过...但确实这两周本该来月经的日子推迟了。以前经期前会有点烦躁，但从没出现过这么严重的情绪问题。您是说这可能和激素变化有关吗？",
+  "progress": "已完成2/6问卷，共16/42题完成"
+}

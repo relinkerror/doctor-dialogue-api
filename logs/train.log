@@ -1,0 +1,12 @@
+2025-09-17 12:13:42,717 [INFO] Use pytorch device_name: cuda:0
+2025-09-17 12:13:42,718 [INFO] Load pretrained SentenceTransformer: models/paraphrase-multilingual-MiniLM-L12-v2
+2025-09-17 12:13:45,819 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 12:13:50,963 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 12:13:54,762 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 12:13:59,433 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 12:14:06,468 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 12:14:11,025 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 12:14:46,679 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 12:14:52,591 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 12:15:27,161 [WARNING] Interrupted. Saving model...
+2025-09-17 12:15:27,173 [INFO] Saved to runs/ppo_questionnaire_MDD.zip

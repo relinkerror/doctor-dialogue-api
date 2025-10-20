@@ -1,0 +1,5 @@
+{
+  "provider": "deepseek",
+  "api_key": "",
+  "base_url": "https://api.deepseek.com/v1"
+}

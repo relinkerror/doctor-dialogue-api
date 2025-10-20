@@ -1,0 +1,27 @@
+{
+  "persona_id": "MDD",
+  "run": 7,
+  "step": 3,
+  "dialog_history": [
+    {
+      "role": "user",
+      "content": "你好，我最近睡眠不好，想咨询一下。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来你最近睡眠状况有些变化。能具体说说最近两周的睡眠情况吗？比如通常几点能睡着，每晚大概睡几个小时？"
+    },
+    {
+      "role": "user",
+      "content": "我几乎整夜都睡不着。躺在床上脑子里全是消极的想法，翻来覆去到凌晨三四点才能勉强睡一会儿。有时候刚睡着就惊醒，然后就再也睡不着了。每天最多能睡两三个小时，而且睡眠很浅。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来你的失眠确实很严重。除了睡眠问题，最近两周情绪方面有什么变化吗？比如是否经常感到悲伤、空虚或者对平时喜欢的事情提不起兴趣？"
+    }
+  ],
+  "current_question": "Depressed mood for most of the day, for more days than not, as indicated by either subjective account or observation by others, for at least 2 years. Note: In children and adolescents, mood can be irritable and duration must be at least 1 year.",
+  "doctor_ask": "这种情况持续多久了？是从最近才开始，还是说这种低落情绪已经伴随你比较长的时间了？",
+  "patient_reply": "就是这两周突然变成这样的。之前我一直都很开朗，工作也很有干劲。但这两周就像变了个人，每天都觉得活着特别累。有时候坐在办公室里，眼泪就突然流下来了，同事们都很惊讶。我自己也不明白为什么会这样。",
+  "progress": "已完成1/6问卷，共5/42题完成"
+}

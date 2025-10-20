@@ -1,0 +1,18 @@
+给定一个 survey 的完整条目列表，每个包含 id 和 question，
+请返回一个 mapping：
+请根据以下 survey 条目，自动识别每一题的 depends_on 问题。
+- depends_on 表示只有前置问题为 True 时，才需要问当前问题。
+举例：
+- Q1: 您是否吸烟？Q2: 如果吸烟，请问每天多少支？ 则 Q2 的 depends_on=["Q1"]。
+输入：
+[
+  {"id":"Test_Q1","question":"您是否吸烟？"},
+  {"id":"Test_Q2","question":"如果吸烟，请问每天多少支？"}
+]
+请只返回如下 JSON：
+{
+  "depends_on_map": [
+    {"id": "Test_Q1", "depends_on": []},
+    {"id": "Test_Q2", "depends_on": ["Test_Q1"]}
+  ]
+}

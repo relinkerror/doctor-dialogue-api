@@ -1,0 +1,35 @@
+{
+  "persona_id": "MDD",
+  "run": 4,
+  "step": 4,
+  "dialog_history": [
+    {
+      "role": "user",
+      "content": "你好，我最近睡眠不好，想咨询一下。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来你最近睡眠质量不太好。能具体说说最近两周的睡眠情况吗？比如每晚能睡几个小时，会不会经常醒来？"
+    },
+    {
+      "role": "user",
+      "content": "我几乎整晚都睡不着。躺在床上脑子里全是负面想法，翻来覆去到凌晨三四点才能勉强睡着。有时候刚睡着没多久就突然惊醒，然后就再也睡不着了。每天最多能睡两三个小时，白天整个人都是昏昏沉沉的。"
+    },
+    {
+      "role": "assistant",
+      "content": "除了失眠之外，最近两周你的情绪状态怎么样？比如会不会经常感到悲伤、空虚或者绝望？"
+    },
+    {
+      "role": "user",
+      "content": "我控制不住地一直哭。明明什么事都没发生，眼泪就突然流下来了。我觉得自己特别没用，工作也做不好，连最简单的报表都看不进去。有时候看着窗户，会想如果跳下去是不是就能解脱了。"
+    },
+    {
+      "role": "assistant",
+      "content": "听起来你正在经历一段非常艰难的时期。这种持续的低落情绪大概是从什么时候开始的？是最近才这样，还是已经持续比较长时间了？"
+    }
+  ],
+  "current_question": "Depressed mood for most of the day, for more days than not, as indicated by either subjective account or observation by others, for at least 2 years. Note: In children and adolescents, mood can be irritable and duration must be at least 1 year.",
+  "doctor_ask": "我理解这种突然的情绪变化让你很困惑。能具体说说这两周有没有发生过什么特别的事情？或者身体上有没有什么不适？有时候生理因素也会影响情绪。",
+  "patient_reply": "真的想不出任何原因。工作还是原来的工作，家里也没发生什么事。身体检查上个月刚做过，医生说一切正常。但就是突然之间，吃饭没胃口，体重掉了快5斤，整个人像被抽空了一样。",
+  "progress": "已完成0/6问卷，共5/42题完成"
+}
