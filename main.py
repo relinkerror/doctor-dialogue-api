@@ -1,4 +1,4 @@
-# doctor_dialogue_api.py
+# main.py
 import os
 import json
 import uuid
@@ -15,13 +15,13 @@ from agents.survey.survey_agent import SurveyAgent
 from agents.dialogue.llm_summary_generator import LLMSummaryGenerator
 from agents.dialogue.dialogue_doctor_agent import DialogueDoctorAgent
 
-
 # ---------------- Config ----------------
 CONFIG_DIR = os.environ.get("CONFIG_DIR", "config")
 QUESTIONNAIRE_DIR = os.environ.get("QUESTIONNAIRE_DIR", "questionnaire")
 CORS_ALLOW_ORIGINS = os.environ.get("CORS_ALLOW_ORIGINS", "*").split(",")
+APP_VERSION = os.environ.get("APP_VERSION", "2.0.0")
 
-app = FastAPI(title="Doctor Dialogue API", version="2.0.0")
+app = FastAPI(title="Doctor Dialogue API", version=APP_VERSION)
 
 app.add_middleware(
     CORSMiddleware,
@@ -30,7 +30,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 # ---------------- Runtime state ----------------
 class AppState:
@@ -41,9 +40,7 @@ class AppState:
         self.survey_meta_json_path: str = ""
         self.sessions: Dict[str, "SessionState"] = {}
 
-
 state = AppState()
-
 
 class SessionState:
     def __init__(self, survey_agent: SurveyAgent, doctor_agent: DialogueDoctorAgent):
@@ -54,22 +51,18 @@ class SessionState:
         self.created_at: datetime = datetime.utcnow()
         self.last_active: datetime = datetime.utcnow()
 
-
 # ---------------- Pydantic models ----------------
 class InitRequest(BaseModel):
     user_id: str = "demo-user"
-
 
 class InitResponse(BaseModel):
     session_id: str
     message: str
 
-
 class DialogueRequest(BaseModel):
     session_id: str
     patient_reply: str = Field(min_length=1)
-    turn: int = Field(1, description="Turn index (client may send; server will override with authoritative value)")
-
+    turn: int = Field(1, description="Client-sent turn; server maintains authoritative counter")
 
 class DialogueResponse(BaseModel):
     turn: int
@@ -78,10 +71,8 @@ class DialogueResponse(BaseModel):
     finished: bool
     progress_text: str
 
-
 class FinishRequest(BaseModel):
     session_id: str
-
 
 class FinishResponse(BaseModel):
     session_id: str
@@ -89,9 +80,8 @@ class FinishResponse(BaseModel):
     answers: Dict[str, List[Dict[str, Any]]]
     progress_text: Optional[str] = None
 
-
 # ---------------- Helpers ----------------
-def get_session(session_id: str) -> SessionState:
+def get_session(session_id: str) -> "SessionState":
     s = state.sessions.get(session_id)
     if not s:
         raise HTTPException(
@@ -101,7 +91,6 @@ def get_session(session_id: str) -> SessionState:
     s.last_active = datetime.utcnow()
     return s
 
-
 def to_progress_text(p: Any) -> str:
     try:
         if isinstance(p, (dict, list)):
@@ -110,8 +99,7 @@ def to_progress_text(p: Any) -> str:
     except Exception:
         return "N/A"
 
-
-# ---------------- Lifecycle: load configuration ----------------
+# ---------------- Lifecycle ----------------
 @app.on_event("startup")
 def startup_event():
     # LLM
@@ -126,26 +114,52 @@ def startup_event():
     with open(os.path.join(CONFIG_DIR, "survey_uncertainty_eval_prompt.txt"), encoding="utf-8") as f:
         state.eval_prompt = f.read()
 
+# ---------------- System & Health Routes ----------------
+@app.get("/", tags=["system"])
+def root():
+    """Root must return 200 for Render/ELB health checks."""
+    return {
+        "status": "ok",
+        "app": "Doctor Dialogue API",
+        "version": APP_VERSION,
+        "time": datetime.utcnow().isoformat() + "Z",
+    }
 
-# ---------------- Routes ----------------
-@app.get("/health")
+@app.get("/health", tags=["system"])
 def health():
     return {"status": "ok", "ts": datetime.utcnow().isoformat()}
 
+@app.get("/healthz", tags=["system"])
+def healthz():
+    return {"status": "ok"}
 
+@app.get("/livez", tags=["system"])
+def livez():
+    return {"status": "alive"}
+
+@app.get("/readyz", tags=["system"])
+def readyz():
+    ready = state.llm is not None
+    return {"ready": ready}
+
+@app.get("/version", tags=["system"])
+def version():
+    return {"version": APP_VERSION}
+
+# ---------------- API: Patient Session ----------------
 @app.post("/api/patient/init", response_model=InitResponse)
 def patient_init(req: InitRequest):
     if not state.llm:
         raise HTTPException(status_code=500, detail="LLM is not initialized.")
 
-    # ✅ 每轮评估：eval_every_n=1
+    # 每轮评估：eval_every_n=1（保持你现有逻辑）
     survey_agent = SurveyAgent(
         state.survey_meta_json_path,
         QUESTIONNAIRE_DIR,
         state.llm,
         eval_prompt=state.eval_prompt,
         threshold=0.2,
-        eval_every_n=1,  # ← 关键改动
+        eval_every_n=1,
     )
 
     doctor_agent = DialogueDoctorAgent(
@@ -159,7 +173,6 @@ def patient_init(req: InitRequest):
     state.sessions[session_id] = SessionState(survey_agent, doctor_agent)
     return InitResponse(session_id=session_id, message="Session initialized.")
 
-
 @app.post("/api/patient/dialogue", response_model=DialogueResponse)
 def patient_dialogue(req: DialogueRequest):
     s = get_session(req.session_id)
@@ -167,16 +180,13 @@ def patient_dialogue(req: DialogueRequest):
     # Authoritative turn++ on server
     s.turn += 1
 
-    # 1) Record user input (history is server-side only; not returned)
+    # 1) Record user input
     s.display_history.append({"role": "user", "content": req.patient_reply})
 
-    # ✅ 1.5) 每轮必须打点，以触发惰性评估计数（此时 eval_every_n=1 → 每轮评估）
+    # 1.5) 打点计数（eval_every_n=1 → 每轮评估）
     s.survey_agent.tick_round()
 
-    # 2) Advance survey: get current QUESTION TEXT
-    # If your auto_advance returns an ID, do:
-    #   qid = s.survey_agent.auto_advance(s.display_history)
-    #   current_question_text = s.survey_agent.get_question_text(qid)
+    # 2) Advance survey, return QUESTION TEXT
     current_question_text = s.survey_agent.auto_advance(s.display_history)
 
     # 2.1) Survey finished
@@ -203,11 +213,10 @@ def patient_dialogue(req: DialogueRequest):
     return DialogueResponse(
         turn=s.turn,
         doctor_ask=doctor_ask,
-        current_question=current_question_text,  # return text for clinician/debug view
+        current_question=current_question_text,
         finished=False,
         progress_text=to_progress_text(s.survey_agent.get_progress()),
     )
-
 
 @app.post("/api/patient/finish", response_model=FinishResponse)
 def patient_finish(req: FinishRequest):
@@ -221,7 +230,7 @@ def patient_finish(req: FinishRequest):
             progress_text=None,
         )
 
-    # 1) Structured answers JSON from your SurveyAgent implementation
+    # 1) Structured answers JSON from your SurveyAgent
     try:
         answers_json = s.survey_agent.get_all_answers()
     except Exception:
@@ -237,7 +246,6 @@ def patient_finish(req: FinishRequest):
         progress_text=progress_text,
     )
 
-
 @app.get("/api/patient/session/{session_id}")
 def session_snapshot(session_id: str):
     s = get_session(session_id)
@@ -251,8 +259,8 @@ def session_snapshot(session_id: str):
         "finished": False,
     }
 
-
 # ---------------- main ----------------
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    port = int(os.getenv("PORT", "8000"))
+    uvicorn.run(app, host="0.0.0.0", port=port, proxy_headers=True, forwarded_allow_ips="*")
