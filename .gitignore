@@ -7,8 +7,6 @@ venv/
 # Env & secrets (绝不入库)
 .env
 *.env
-config/llm_config.json
-utils/transcription/.env
 
 # OS & tools
 .DS_Store
